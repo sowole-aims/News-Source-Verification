@@ -40,12 +40,19 @@ If you want to implement the deployment process that I took to deploy the model 
 - If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key with the following command through your command line:
 `heroku login`
 - Create a new Git repository. Initialize a git repository in a new or existing directory with the following commands:
+
 `cd my-project/` (this should be the name of the directory holding your project)
+
 `git init`
+
 `heroku git:remote -a news-source-verification-app` (change the name to the name you have given to your app)
+
 - Deploy your application: Commit your code to the repository and deploy it to Heroku using Git with the following commands:
+
 `git add .`
+
 `git commit -am "make it better"` (you can choose any alias message you want - alias in the “quote”)
+
 `git push heroku master`
 
 
